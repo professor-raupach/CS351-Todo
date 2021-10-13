@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        li.todo-item label {
+            width: auto;
+        }
+    </style>
+
+</head>
+<body>
+<form id="filter_form">
+    <div class="field-group">
+        <label for="filter-input" id="filter-label">Filter:</label>
+        <input type="text" id="filter-input">
+        <label for="complete-filter">
+            <input type="checkbox" id="complete-filter"> Completed
+        </label>
+    </div>
+</form>
+
+<form id="todo-form">
+    <div class="field-group">
+        <label for="todo-input" id="todo-label">Add a Todo:</label>
+        <input type="text" id="todo-input">
+
+        <button type="button" id="add-button">Add</button>
+    </div>
+</form>
+
+<div>
+    <ul id="todo-list"></ul>
+</div>
+</body>
+<script src="scripts/todo_functions.js"></script>
+<script src="scripts/todo.js"></script>
+</html>
